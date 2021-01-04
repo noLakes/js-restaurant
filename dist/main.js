@@ -1,1 +1,1 @@
-console.log("Webpack is working!");
+(()=>{"use strict";const e={newElement(e,n,t=null){const o=document.createElement(e);return o.classList.add(n),t&&(o.innerHTML=t),o},main:document.querySelector(".main-container")};console.log("Webpack is working!");let n=e.newElement("div","testBoy","Hello, I am a test div!");console.log(n),console.log(e.main)})();
