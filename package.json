@@ -1,0 +1,23 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "simple web page for a restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/noLakes/js-restaurant.git"
+  },
+  "author": "noLakes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noLakes/js-restaurant/issues"
+  },
+  "homepage": "https://github.com/noLakes/js-restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
+}
