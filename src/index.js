@@ -1,9 +1,14 @@
 import setup from './setup';
+import loadHome from './home';
+import loadMenu from './menu';
+import loadContact from './contact';
 
 // generates basic site elements
 setup();
 
+// tracks current tab
 let activeTab = 'home';
+loadHome();
 
 const content = document.querySelector('.content-container');
 
@@ -23,13 +28,13 @@ function loadTab(e) {
   clearContent();
   switch(e.target.id) {
     case 'home':
-      alert('load home');
+      loadHome();
       break;
     case 'menu':
-      alert('load menu');
+      loadMenu();
       break;
     case 'contact':
-      alert('load contact');
+      loadContact();
       break;
   }
   activeTab = e.target.id;
