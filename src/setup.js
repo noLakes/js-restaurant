@@ -1,4 +1,3 @@
-
 const setup = () => {
   const main = document.querySelector('.main-container');
   main.innerHTML = '';
@@ -17,6 +16,7 @@ const setup = () => {
   const home = document.createElement('li');
   home.innerHTML = 'Home';
   home.id = 'home';
+  home.classList.add('active');
   nav.appendChild(home);
 
   const menu = document.createElement('li');
