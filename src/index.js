@@ -1,6 +1,12 @@
-import page from './page';
+import setup from './setup';
 
 console.log('Webpack is working!');
-let test = page.newElement('div', 'testBoy', 'Hello, I am a test div!');
-console.log(test);
-console.log(page.main);
+setup();
+
+
+const newElement = (type, className, inner=null) => {
+  const el = document.createElement(type);
+  el.classList.add(className);
+  if(inner) el.innerHTML = inner;
+  return el;
+}
