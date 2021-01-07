@@ -13,6 +13,11 @@ const setup = () => {
   const nav = document.createElement('ul');
   nav.classList.add('site-nav');
 
+  const title = document.createElement('li');
+  title.innerHTML = 'Title';
+  title.id = 'header-title';
+  nav.appendChild(title);
+
   const home = document.createElement('li');
   home.innerHTML = 'Home';
   home.id = 'home';

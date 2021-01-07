@@ -41,8 +41,10 @@ function loadTab(e) {
 }
 
 document.querySelectorAll('.site-nav li').forEach(el => {
-  el.addEventListener('click', toggleActive);
-  el.addEventListener('click', loadTab);
+  if(el.id !== 'header-title') {
+    el.addEventListener('click', toggleActive);
+    el.addEventListener('click', loadTab);
+  }
 });
 
 /*
