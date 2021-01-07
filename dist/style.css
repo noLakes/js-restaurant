@@ -69,3 +69,57 @@ select {
 }
 
 /* CSS reset end - Style changes begin */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  background-color: skyblue;
+}
+
+.nav li {
+  padding: 1rem;
+  margin: 5px 0px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 66px;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: slategray;
+  position: absolute;
+  bottom: 0;
+  height: 66px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  background-color: lemonchiffon;
+  padding: 1rem;
+}

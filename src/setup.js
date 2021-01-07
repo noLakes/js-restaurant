@@ -11,7 +11,7 @@ const setup = () => {
   footer.classList.add('footer-container');
 
   const nav = document.createElement('ul');
-  nav.classList.add('site-nav');
+  nav.classList.add('nav');
 
   const title = document.createElement('li');
   title.innerHTML = 'Title';
