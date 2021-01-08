@@ -3,25 +3,26 @@ const menu = () => {
   menuContainer.classList.add('menu-container');
 
   const title = document.createElement('h2');
-  title.innerHTML = 'Current Seasonal Offerings';
+  title.innerHTML = 'seasonal offerings';
 
   const menuList = document.createElement('ul');
   menuList.classList.add('menu');
 
   const menuItems = {
-    'key1' : 'val',
-    'key2' : 'val',
-    'key3' : 'val',
-    'key4' : 'val',
-    'key5' : 'val',
-    'key6' : 'val',
-    'key7' : 'val',
-    'key8' : 'val',
-    'key9' : 'val',
-    'key10' : 'val',
-    'key11' : 'val',
-    'key12' : 'val',
-    'key13' : 'val',
+    'Charcoal Grilled Yakitori' : 'duck heart, sweet soy glaze  $8',
+    'Elk Tartare' : 'hand cut Ontario elk, minced capers, gherkins, shallots, pickled chanterelles, pickled wild leeks, gaufrette potatoes  $18',
+    'Ricotta Cavatelli with Wild Mushrooms' : 'wild foraged mushrooms, tomato sauce, parmesan, basil  $20',
+    'Ricotta Cavatelli with Wild Boar Ragu' : 'tomato braised wild boar, parmesan, basil  $26',
+    'Bruce County Ontario Venison' : 'seared loin, rutabaga puree, fondant turnips, heirloom baby carrots, pastry wrapped venison terrine, venison jus $42',
+    'Ontario Duck' : 'roasted duck breast, cheddar grits, maple beans, braised kale  $36',
+    'Buttermilk Fried Rabbit Sandwich' : 'buttermilk fried rabbit, apple purée, in-house mustard,  lettuce, pickles, celeriac remoulade, fries  $26',
+    'Wild Mushroom Risotto ' : 'arborio rice, lobster mushrooms, parmesan  $22',
+    'asj3124lasda' : 'val',
+    'as564346lasda' : 'val',
+    'asjdlaasada' : 'val',
+    'as1239lasda' : 'val',
+    'as213lasda' : 'val',
+    'as138lasda' : 'val',
   }
 
   for (const recipie in menuItems) {

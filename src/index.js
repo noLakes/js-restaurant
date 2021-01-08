@@ -24,6 +24,8 @@ loadContent(home());
 // tracks current tab
 let activeTab = 'home';
 
+const footer = document.querySelector('.footer-container');
+
 // toggles active class style on nav links
 function toggleActive(e) {
   if(e.target.classList.contains('active')) return;
