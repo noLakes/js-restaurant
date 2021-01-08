@@ -1,21 +1,30 @@
 import setup from './setup';
-import loadHome from './home';
-import loadMenu from './menu';
-import loadContact from './contact';
+import home from './home';
+import menu from './menu';
+import contact from './contact';
 
-// generates basic site elements
-setup();
+// loads initial html elements
+document.querySelector('body').appendChild(setup());
 
-// tracks current tab
-let activeTab = 'home';
-loadHome();
-
+// designates content container
 const content = document.querySelector('.content-container');
+
+// loads content container
+function loadContent(source) {
+  content.appendChild(source);
+}
 
 function clearContent() {
   content.innerHTML = '';
 }
 
+// loads home page content
+loadContent(home());
+
+// tracks current tab
+let activeTab = 'home';
+
+// toggles active class style on nav links
 function toggleActive(e) {
   if(e.target.classList.contains('active')) return;
   const siblings = Array(...e.target.parentNode.children);
@@ -23,35 +32,27 @@ function toggleActive(e) {
   e.target.classList.add('active');
 }
 
-function loadTab(e) {
+// loads content according to tab
+function changeTab(e) {
   if(e.target.id === activeTab) return;
   clearContent();
   switch(e.target.id) {
     case 'home':
-      loadHome();
+      loadContent(home());
       break;
     case 'menu':
-      loadMenu();
+      loadContent(menu());
       break;
     case 'contact':
-      loadContact();
+      loadContent(contact());
       break;
   }
   activeTab = e.target.id;
 }
 
-document.querySelectorAll('.site-nav li').forEach(el => {
+document.querySelectorAll('.nav li').forEach(el => {
   if(el.id !== 'header-title') {
     el.addEventListener('click', toggleActive);
-    el.addEventListener('click', loadTab);
+    el.addEventListener('click', changeTab);
   }
 });
-
-/*
-const newElement = (type, className, inner=null) => {
-  const el = document.createElement(type);
-  el.classList.add(className);
-  if(inner) el.innerHTML = inner;
-  return el;
-}
-*/

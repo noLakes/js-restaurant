@@ -1,21 +1,19 @@
 const home = () => {
-  const content = document.querySelector('.content-container');
 
-  const textContainer = document.createElement('div');
-  textContainer.classList.add('text-container');
-
+  const titleContainer = document.createElement('div');
+  titleContainer.classList.add('title-container');
 
   const title = document.createElement('h1');
   title.classList.add('title');
-  title.innerHTML = 'Restaurant Name';
+  title.innerHTML = 'Forrest Floor';
 
   const description = document.createElement('p');
   description.classList.add('description');
-  description.innerHTML = 'A small about section describing the restaurant';
+  description.innerHTML = 'food sought and foraged for in the wilderness of Ontario brought back to the heart of the city';
 
-  textContainer.appendChild(title);
-  textContainer.appendChild(description);
-  content.appendChild(textContainer);
+  titleContainer.appendChild(title);
+  titleContainer.appendChild(description);
+  return titleContainer;
 }
 
 export default home;

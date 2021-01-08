@@ -1,6 +1,6 @@
 const setup = () => {
-  const main = document.querySelector('.main-container');
-  main.innerHTML = '';
+  const main = document.createElement('div');
+  main.classList.add('main-container');
 
   const header = document.createElement('div');
   const content = document.createElement('div');
@@ -46,6 +46,7 @@ const setup = () => {
   main.appendChild(header);
   main.appendChild(content);
   main.appendChild(footer);
+  return main;
 }
 
 export default setup;
