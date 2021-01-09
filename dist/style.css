@@ -70,6 +70,29 @@ select {
 
 /* CSS reset end - Style changes begin */
 
+@font-face {
+  font-family: tangerine;
+  src: url(fonts/Tangerine-Regular.ttf);
+}
+
+@font-face {
+  font-family: tangerineBold;
+  src: url(fonts/Tangerine-Bold.ttf);
+  font-weight: bold;
+}
+
+* {
+  font-family: serif;
+}
+
+h1, #header-title {
+  font-family: tangerineBold, serif;
+}
+
+h2 {
+  font-family: tangerine, serif;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -77,6 +100,11 @@ select {
   min-height: 100vh;
   height: 100%;
   align-items: center;
+  background-image: url(img/forest1.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom; 
+  background-size: cover, 100%;
 }
 
 .header-container {
@@ -108,6 +136,7 @@ select {
 
 .footer-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -125,10 +154,34 @@ select {
   padding: 1rem;
 }
 
-.name {
+.title {
+  font-size: 5rem;
+}
 
+.description {
+  font-style: italic;
+}
+
+.menu-container {
+  max-width: 80%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu li {
+  text-align: center;
+}
+
+.name {
+  font-weight: 700;
+  border-bottom: 1px solid rgba(5, 6, 7, 0.584);
 }
 
 .info {
-
+  font-style: italic;
+  margin-bottom: 5px;
 }

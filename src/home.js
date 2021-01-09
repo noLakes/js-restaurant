@@ -5,7 +5,7 @@ const home = () => {
 
   const title = document.createElement('h1');
   title.classList.add('title');
-  title.innerHTML = 'Forrest Floor';
+  title.innerHTML = 'Forest Floor';
 
   const description = document.createElement('p');
   description.classList.add('description');

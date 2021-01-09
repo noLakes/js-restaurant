@@ -14,7 +14,7 @@ const setup = () => {
   nav.classList.add('nav');
 
   const title = document.createElement('li');
-  title.innerHTML = 'Title';
+  title.innerHTML = 'FF';
   title.id = 'header-title';
   nav.appendChild(title);
 
@@ -36,12 +36,23 @@ const setup = () => {
 
   header.appendChild(nav);
 
+  const authorLine = document.createElement('p');
+  authorLine.innerHTML = 'by ';
   const author = document.createElement('a');
   author.id = 'author';
-  author.innerHTML = '@noLakes';
+  author.innerHTML = 'noLakes';
   author.href = 'https://github.com/noLakes';
+  authorLine.appendChild(author);
 
-  footer.appendChild(author);
+  const antler = document.createElement('p');
+  antler.innerHTML = 'menu borrowed from my local favorite ';
+  const antlerLink = document.createElement('a');
+  antlerLink.innerHTML = 'Antler';
+  antlerLink.href = 'http://www.antlerkitchenbar.com/';
+  antler.appendChild(antlerLink);
+
+  footer.appendChild(antler);
+  footer.appendChild(authorLine);
 
   main.appendChild(header);
   main.appendChild(content);

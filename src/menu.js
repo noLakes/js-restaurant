@@ -11,18 +11,13 @@ const menu = () => {
   const menuItems = {
     'Charcoal Grilled Yakitori' : 'duck heart, sweet soy glaze  $8',
     'Elk Tartare' : 'hand cut Ontario elk, minced capers, gherkins, shallots, pickled chanterelles, pickled wild leeks, gaufrette potatoes  $18',
+    'Endive Salad' : 'poached pear, celeriac, walnuts, dijon vinaigrette $14',
     'Ricotta Cavatelli with Wild Mushrooms' : 'wild foraged mushrooms, tomato sauce, parmesan, basil  $20',
     'Ricotta Cavatelli with Wild Boar Ragu' : 'tomato braised wild boar, parmesan, basil  $26',
     'Bruce County Ontario Venison' : 'seared loin, rutabaga puree, fondant turnips, heirloom baby carrots, pastry wrapped venison terrine, venison jus $42',
     'Ontario Duck' : 'roasted duck breast, cheddar grits, maple beans, braised kale  $36',
     'Buttermilk Fried Rabbit Sandwich' : 'buttermilk fried rabbit, apple purée, in-house mustard,  lettuce, pickles, celeriac remoulade, fries  $26',
     'Wild Mushroom Risotto ' : 'arborio rice, lobster mushrooms, parmesan  $22',
-    'asj3124lasda' : 'val',
-    'as564346lasda' : 'val',
-    'asjdlaasada' : 'val',
-    'as1239lasda' : 'val',
-    'as213lasda' : 'val',
-    'as138lasda' : 'val',
   }
 
   for (const recipie in menuItems) {
