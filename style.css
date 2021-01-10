@@ -83,6 +83,7 @@ select {
 
 * {
   font-family: serif;
+  color: #39423d;
 }
 
 h1, #header-title {
@@ -91,6 +92,7 @@ h1, #header-title {
 
 h2 {
   font-family: tangerine, serif;
+  font-size: 2rem;
 }
 
 .main-container {
@@ -117,7 +119,8 @@ h2 {
   position: fixed;
   width: 100%;
   justify-content: center;
-  background-color: skyblue;
+  /*background-color: #91a590f1;*/
+  background-color: #8fa9a6f1;
 }
 
 .nav li {
@@ -125,11 +128,30 @@ h2 {
   margin: 5px 0px;
 }
 
+.nav-link:hover {
+  cursor: pointer;
+  color: #ccbf8b;
+}
+
+.nav-link:active {
+  color: #2c3430;
+}
+
+.active {
+  color: #0e100f;
+}
+
+.nav-link.active:hover {
+  cursor: initial;
+  color: #0e100f;
+}
+
 .content-container {
   display: flex;
   flex: 1 0 auto;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
   margin-top: 66px;
 }
@@ -140,18 +162,29 @@ h2 {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: slategray;
+  background-color: #39423df3;
   height: 66px;
   flex-shrink: 0;
 }
 
-.title-container, .menu-container {
+.title-container, .menu-container, .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
-  background-color: lemonchiffon;
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: #ccbf8be5;
   padding: 1rem;
+  border-radius: 10px;
+}
+
+.footer-container p, .footer-container a {
+  color: #a29977dd;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #91a590;
 }
 
 .title {
@@ -160,10 +193,11 @@ h2 {
 
 .description {
   font-style: italic;
+  text-align: center;
 }
 
 .menu-container {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .menu {
@@ -174,6 +208,7 @@ h2 {
 
 .menu li {
   text-align: center;
+  max-width: 468px;
 }
 
 .name {
@@ -184,4 +219,38 @@ h2 {
 .info {
   font-style: italic;
   margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+#address1, #hours1 {
+  margin-top: 15px;
+}
+
+.location {
+  width: 50%;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 710px) {
+  .info-container {
+    flex-direction: column;
+  }
+
+  .contact-details li {
+    text-align: center;
+  }
+
+  .location {
+    margin: 2rem 0rem;
+    width: 100%;
+  }
+
 }
