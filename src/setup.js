@@ -20,17 +20,20 @@ const setup = () => {
 
   const home = document.createElement('li');
   home.innerHTML = 'Home';
+  home.classList.add('nav-link');
   home.id = 'home';
   home.classList.add('active');
   nav.appendChild(home);
 
   const menu = document.createElement('li');
   menu.innerHTML = 'Menu';
+  menu.classList.add('nav-link');
   menu.id = 'menu';
   nav.appendChild(menu);
 
   const contact = document.createElement('li');
   contact.innerHTML = 'Contact';
+  contact.classList.add('nav-link');
   contact.id = 'contact';
   nav.appendChild(contact);
 

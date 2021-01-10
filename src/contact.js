@@ -10,30 +10,30 @@ const contact = () => {
   infoContainer.classList.add('info-container');
 
   const infoList = document.createElement('ul');
-  infoList.classList.add('info');
+  infoList.classList.add('contact-details');
 
   const email = document.createElement('li');
-  email.classList.add('email');
+  email.id = 'email';
   email.innerHTML = 'hello@forestfloor.ca'
 
   const phone = document.createElement('li');
-  phone.classList.add('phone');
+  phone.id = 'phone';
   phone.innerHTML = '647 667 9323';
 
   const address1 = document.createElement('li');
-  address1.classList.add('address');
+  address1.id = 'address1';
   address1.innerHTML = '1305 Dundas St West';
 
   const address2 = document.createElement('li');
-  address2.classList.add('address');
+  address2.id = 'address2';
   address2.innerHTML = 'Toronto, Ontario, M6J 1X8';
 
   const hours1 = document.createElement('li');
-  hours1.classList.add('hours');
+  hours1.id = 'hours1';
   hours1.innerHTML = 'Weekdays 3pm - 9pm';
 
   const hours2 = document.createElement('li');
-  hours2.classList.add('hours');
+  hours2.id = 'hours2';
   hours2.innerHTML = 'Weekends 2pm - 11pm';
 
   infoList.appendChild(email);
